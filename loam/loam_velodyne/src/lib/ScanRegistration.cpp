@@ -188,14 +188,14 @@ void ScanRegistration::publishResult()
 {
   auto sweepStartTime = toROSTime(sweepStart());
   // publish full resolution and feature point clouds
-  publishCloudMsg(_pubLaserCloud, laserCloud(), sweepStartTime, "/camera");
-  publishCloudMsg(_pubCornerPointsSharp, cornerPointsSharp(), sweepStartTime, "/camera");
-  publishCloudMsg(_pubCornerPointsLessSharp, cornerPointsLessSharp(), sweepStartTime, "/camera");
-  publishCloudMsg(_pubSurfPointsFlat, surfacePointsFlat(), sweepStartTime, "/camera");
-  publishCloudMsg(_pubSurfPointsLessFlat, surfacePointsLessFlat(), sweepStartTime, "/camera");
+  publishCloudMsg(_pubLaserCloud, laserCloud(), sweepStartTime, "camera");
+  publishCloudMsg(_pubCornerPointsSharp, cornerPointsSharp(), sweepStartTime, "camera");
+  publishCloudMsg(_pubCornerPointsLessSharp, cornerPointsLessSharp(), sweepStartTime, "camera");
+  publishCloudMsg(_pubSurfPointsFlat, surfacePointsFlat(), sweepStartTime, "camera");
+  publishCloudMsg(_pubSurfPointsLessFlat, surfacePointsLessFlat(), sweepStartTime, "camera");
 
   // publish corresponding IMU transformation information
-  publishCloudMsg(_pubImuTrans, imuTransform(), sweepStartTime, "/camera");
+  publishCloudMsg(_pubImuTrans, imuTransform(), sweepStartTime, "camera");
 }
 
 } // end namespace loam

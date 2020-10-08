@@ -53,11 +53,11 @@ namespace loam
     _ioRatio(ioRatio)
   {
     // initialize odometry and odometry tf messages
-    _laserOdometryMsg.header.frame_id = "/camera_init";
-    _laserOdometryMsg.child_frame_id  = "/laser_odom";
+    _laserOdometryMsg.header.frame_id = "camera_init";
+    _laserOdometryMsg.child_frame_id  = "laser_odom";
 
-    _laserOdometryTrans.frame_id_       = "/camera_init";
-    _laserOdometryTrans.child_frame_id_ = "/laser_odom";
+    _laserOdometryTrans.frame_id_       = "camera_init";
+    _laserOdometryTrans.child_frame_id_ = "laser_odom";
   }
 
 
@@ -320,11 +320,11 @@ namespace loam
     if (_ioRatio < 2 || frameCount() % _ioRatio == 1)
     {
       ros::Time sweepTime = _timeSurfPointsLessFlat;
-      publishCloudMsg(_pubLaserCloudCornerLast, *lastCornerCloud(), sweepTime, "/camera");
-      publishCloudMsg(_pubLaserCloudSurfLast, *lastSurfaceCloud(), sweepTime, "/camera");
+      publishCloudMsg(_pubLaserCloudCornerLast, *lastCornerCloud(), sweepTime, "camera");
+      publishCloudMsg(_pubLaserCloudSurfLast, *lastSurfaceCloud(), sweepTime, "camera");
 
       transformToEnd(laserCloud());  // transform full resolution cloud to sweep end before sending it
-      publishCloudMsg(_pubLaserCloudFullRes, *laserCloud(), sweepTime, "/camera");
+      publishCloudMsg(_pubLaserCloudFullRes, *laserCloud(), sweepTime, "camera");
     }
   }
 

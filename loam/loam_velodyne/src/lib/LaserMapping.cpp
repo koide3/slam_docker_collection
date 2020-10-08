@@ -39,11 +39,11 @@ namespace loam
 LaserMapping::LaserMapping(const float& scanPeriod, const size_t& maxIterations)
 {
    // initialize mapping odometry and odometry tf messages
-   _odomAftMapped.header.frame_id = "/camera_init";
-   _odomAftMapped.child_frame_id = "/aft_mapped";
+   _odomAftMapped.header.frame_id = "camera_init";
+   _odomAftMapped.child_frame_id = "aft_mapped";
 
-   _aftMappedTrans.frame_id_ = "/camera_init";
-   _aftMappedTrans.child_frame_id_ = "/aft_mapped";
+   _aftMappedTrans.frame_id_ = "camera_init";
+   _aftMappedTrans.child_frame_id_ = "aft_mapped";
 }
 
 
@@ -277,10 +277,10 @@ void LaserMapping::publishResult()
 {
    // publish new map cloud according to the input output ratio
    if (hasFreshMap()) // publish new map cloud
-      publishCloudMsg(_pubLaserCloudSurround, laserCloudSurroundDS(), _timeLaserOdometry, "/camera_init");
+      publishCloudMsg(_pubLaserCloudSurround, laserCloudSurroundDS(), _timeLaserOdometry, "camera_init");
 
    // publish transformed full resolution input cloud
-   publishCloudMsg(_pubLaserCloudFullRes, laserCloud(), _timeLaserOdometry, "/camera_init");
+   publishCloudMsg(_pubLaserCloudFullRes, laserCloud(), _timeLaserOdometry, "camera_init");
 
    // publish odometry after mapped transformations
    geometry_msgs::Quaternion geoQuat = tf::createQuaternionMsgFromRollPitchYaw

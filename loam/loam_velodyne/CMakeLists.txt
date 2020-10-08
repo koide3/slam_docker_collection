@@ -32,7 +32,7 @@ catkin_package(
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_definitions( -march=native )
+# add_definitions( -march=native )
 
 
 add_subdirectory(src/lib)
