@@ -135,7 +135,7 @@ private:
     for(const auto& candidate : candidate_keyframes) {
       registration->setInputSource(candidate->cloud);
       Eigen::Matrix4f guess = (new_keyframe->node->estimate().inverse() * candidate->node->estimate()).matrix().cast<float>();
-      guess(2, 3) = 0.0;
+      guess.block<3, 3>(0, 0) = Eigen::Quaternionf(guess.block<3, 3>(0, 0)).normalized().toRotationMatrix();
       registration->align(*aligned, guess);
       std::cout << "." << std::flush;
 

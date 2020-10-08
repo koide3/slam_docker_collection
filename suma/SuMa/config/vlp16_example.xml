@@ -51,11 +51,11 @@
   <param name="map-max-angle" type="float">60.0</param>
   
   <param name="unstable_age" type="integer">3</param>
-  <param name="confidence_mode" type="integer">3</param> <!-- 0 no, 1 angle, 2 distance, 3 both -->
+  <param name="confidence_mode" type="integer">0</param> <!-- 0 no, 1 angle, 2 distance, 3 both -->
   <param name="confidence_threshold" type="float">0.0</param>
-  <param name="p_stable" type="float">0.6</param>
-  <param name="p_unstable" type="float">0.4</param>
-  <param name="p_prior" type="float">0.5</param>
+  <param name="p_stable" type="float">0.3</param>
+  <param name="p_unstable" type="float">0.1</param>
+  <param name="p_prior" type="float">0.25</param>
   
   <param name="sigma_angle" type="float">1.0</param>
   <param name="sigma_distance" type="float">1.0</param>

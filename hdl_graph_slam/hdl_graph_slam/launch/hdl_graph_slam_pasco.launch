@@ -47,10 +47,11 @@
       <param name="downsample_method" value="NONE" />
       <param name="downsample_resolution" value="0.1" />
       <!-- ICP, GICP, NDT, GICP_OMP, or NDT_OMP(recommended) -->
-      <param name="registration_method" value="GICP" />
+      <param name="registration_method" value="FAST_GICP" />
       <param name="ndt_resolution" value="2.0" />
       <param name="ndt_num_threads" value="0" />
       <param name="ndt_nn_search_method" value="DIRECT7" />
+      <param name="gicp_correspondence_randomness" value="40" />
   </node>
 
   <!-- floor_detection_nodelet -->
@@ -87,10 +88,11 @@
     <param name="min_edge_interval" value="15.0" />
     <param name="fitness_score_thresh" value="2.5" />
     <!-- scan matching params -->
-    <param name="registration_method" value="GICP" />
+    <param name="registration_method" value="FAST_GICP" />
     <param name="ndt_resolution" value="1.0" />
     <param name="ndt_num_threads" value="0" />
     <param name="ndt_nn_search_method" value="DIRECT7" />
+    <param name="gicp_correspondence_randomness" value="40" />
     <!-- edge params -->
     <!-- GPS -->
     <param name="gps_edge_robust_kernel" value="NONE" />

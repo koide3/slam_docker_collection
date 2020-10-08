@@ -10,6 +10,8 @@
 
 #include <pclomp/ndt_omp.h>
 #include <pclomp/gicp_omp.h>
+#include <fast_gicp/gicp/fast_gicp.hpp>
+#include <fast_gicp/gicp/fast_vgicp.hpp>
 
 namespace hdl_graph_slam {
 
@@ -18,7 +20,23 @@ boost::shared_ptr<pcl::Registration<pcl::PointXYZI, pcl::PointXYZI>> select_regi
 
   // select a registration method (ICP, GICP, NDT)
   std::string registration_method = pnh.param<std::string>("registration_method", "NDT_OMP");
-  if(registration_method == "ICP") {
+  if(registration_method == "FAST_GICP") {
+    boost::shared_ptr<fast_gicp::FastGICP<PointT, PointT>> gicp(new fast_gicp::FastGICP<PointT, PointT>());
+    gicp->setTransformationEpsilon(pnh.param<double>("transformation_epsilon", 0.01));
+    gicp->setMaximumIterations(pnh.param<int>("maximum_iterations", 64));
+    gicp->setCorrespondenceRandomness(pnh.param<int>("gicp_correspondence_randomness", 20));
+    gicp->setMaxCorrespondenceDistance(2.0);
+    return gicp;
+  } else if(registration_method == "FAST_VGICP") {
+    double ndt_resolution = pnh.param<double>("ndt_resolution", 0.5);
+
+    boost::shared_ptr<fast_gicp::FastVGICP<PointT, PointT>> gicp(new fast_gicp::FastVGICP<PointT, PointT>());
+    gicp->setTransformationEpsilon(pnh.param<double>("transformation_epsilon", 0.01));
+    gicp->setMaximumIterations(pnh.param<int>("maximum_iterations", 64));
+    gicp->setCorrespondenceRandomness(pnh.param<int>("gicp_correspondence_randomness", 20));
+    gicp->setResolution(ndt_resolution);
+    return gicp;
+  } else if(registration_method == "ICP") {
     std::cout << "registration: ICP" << std::endl;
     boost::shared_ptr<pcl::IterativeClosestPoint<PointT, PointT>> icp(new pcl::IterativeClosestPoint<PointT, PointT>());
     icp->setTransformationEpsilon(pnh.param<double>("transformation_epsilon", 0.01));

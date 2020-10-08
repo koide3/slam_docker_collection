@@ -19,6 +19,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   interactive_markers
   ndt_omp
+  fast_gicp
 )
 
 find_package(PCL 1.7 REQUIRED)
