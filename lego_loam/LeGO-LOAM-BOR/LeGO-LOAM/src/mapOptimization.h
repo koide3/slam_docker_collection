@@ -51,6 +51,8 @@ class MapOptimization {
   ros::NodeHandle& nh;
   bool _loop_closure_enabled;
   float _scan_period;
+  float _noise_scale_trans;
+  float _noise_scale_rot;
 
   float _surrounding_keyframe_search_radius;
   int   _surrounding_keyframe_search_num;
@@ -82,6 +84,7 @@ class MapOptimization {
   tf::StampedTransform aftMappedTrans;
   tf::TransformBroadcaster tfBroadcaster;
 
+  std::vector<double> keyframeStamps;
   std::vector<pcl::PointCloud<PointType>::Ptr> cornerCloudKeyFrames;
   std::vector<pcl::PointCloud<PointType>::Ptr> surfCloudKeyFrames;
   std::vector<pcl::PointCloud<PointType>::Ptr> outlierCloudKeyFrames;

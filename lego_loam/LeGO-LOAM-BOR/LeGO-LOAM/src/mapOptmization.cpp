@@ -35,6 +35,7 @@
 //      (IROS). October 2018.
 
 #include "mapOptimization.h"
+#include "dumpGraph.h"
 #include <future>
 
 using namespace gtsam;
@@ -87,6 +88,11 @@ MapOptimization::MapOptimization(ros::NodeHandle &node,
 
   nh.getParam("/lego_loam/mapping/enable_loop_closure", _loop_closure_enabled);
 
+  _noise_scale_trans = _noise_scale_rot = 1.0f;
+  nh.getParam("/lego_loam/mapping/noise_scale_trans", _noise_scale_trans);
+
+  nh.getParam("/lego_loam/mapping/noise_scale_rot", _noise_scale_rot);
+
   nh.getParam("/lego_loam/mapping/history_keyframe_search_radius",
               _history_keyframe_search_radius);
 
@@ -115,6 +121,7 @@ MapOptimization::MapOptimization(ros::NodeHandle &node,
 
 MapOptimization::~MapOptimization()
 {
+  dump("/tmp/dump", *isam, isamCurrentEstimate, keyframeStamps, cornerCloudKeyFrames, surfCloudKeyFrames, outlierCloudKeyFrames);
   _input_channel.send({});
   _run_thread.join();
 
@@ -724,8 +731,8 @@ void MapOptimization::performLoopClosure() {
       pclPointTogtsamPose3(cloudKeyPoses6D->points[closestHistoryFrameID]);
   gtsam::Vector Vector6(6);
   float noiseScore = icp.getFitnessScore();
-  Vector6 << noiseScore, noiseScore, noiseScore, noiseScore, noiseScore,
-      noiseScore;
+  Vector6 << _noise_scale_rot * noiseScore, _noise_scale_rot * noiseScore, _noise_scale_rot * noiseScore, _noise_scale_trans * noiseScore,  _noise_scale_trans * noiseScore,
+       _noise_scale_trans * noiseScore;
   auto constraintNoise = noiseModel::Diagonal::Variances(Vector6);
   /*
           add constraints
@@ -1215,7 +1222,7 @@ void MapOptimization::saveKeyFramesAndFactor() {
   currentRobotPosPoint.z = transformAftMapped[5];
 
   gtsam::Vector Vector6(6);
-  Vector6 << 1e-6, 1e-6, 1e-6, 1e-8, 1e-8, 1e-6;
+  Vector6 << 1e-6, 1e-6, 1e-6, 1e-8, 1e-8, 1e-8;
   auto priorNoise = noiseModel::Diagonal::Variances(Vector6);
   auto odometryNoise = noiseModel::Diagonal::Variances(Vector6);
 
@@ -1335,6 +1342,7 @@ void MapOptimization::saveKeyFramesAndFactor() {
   cornerCloudKeyFrames.push_back(thisCornerKeyFrame);
   surfCloudKeyFrames.push_back(thisSurfKeyFrame);
   outlierCloudKeyFrames.push_back(thisOutlierKeyFrame);
+  keyframeStamps.push_back(timeLaserOdometry);
 }
 
 void MapOptimization::correctPoses() {

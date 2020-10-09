@@ -787,7 +787,7 @@ bool FeatureAssociation::calculateTransformationSurf(int iterCount) {
     Eigen::Matrix<float,1,3> matE;
     Eigen::Matrix<float,3,3> matV;
     Eigen::Matrix<float,3,3> matV2;
-    
+
     Eigen::SelfAdjointEigenSolver< Eigen::Matrix<float,3,3> > esolver(matAtA);
     matE = esolver.eigenvalues().real();
     matV = esolver.eigenvectors().real();

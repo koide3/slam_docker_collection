@@ -49,6 +49,7 @@ add_executable(lego_loam_bor
     src/featureAssociation.cpp
     src/mapOptmization.cpp
     src/transformFusion.cpp
+    src/dumpGraph.cpp
     src/main.cpp)
 
 add_dependencies(lego_loam_bor ${catkin_EXPORTED_TARGETS} cloud_msgs_gencpp)
