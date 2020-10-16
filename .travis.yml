@@ -7,6 +7,12 @@ services:
 
 matrix:
   include:
+    - name: "lins"
+      env: PACKAGE=lins
+    - name: "lio_sam"
+      env: PACKAGE=lio_sam
+    - name: "lio_mapping"
+      env: PACKAGE=lio_mapping
     - name: "hdl_graph_slam"
       env: PACKAGE=hdl_graph_slam
     - name: "lego_loam"
