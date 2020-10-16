@@ -19,6 +19,8 @@ matrix:
       env: PACKAGE=ethzasl_icp
     - name: "voxblox"
       env: PACKAGE=voxblox
+    - name: "voxgraph"
+      env: PACKAGE=voxgraph
 
 script:
   - cd $PACKAGE
