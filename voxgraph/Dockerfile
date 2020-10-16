@@ -26,7 +26,6 @@ RUN git clone https://github.com/ethz-asl/voxblox.git
 RUN wstool init . ./voxblox/voxblox_https.rosinstall
 RUN wstool update
 
-WORKDIR /root/catkin_ws/src
 RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin build voxblox_ros'
 
 # build voxgraph
@@ -34,11 +33,12 @@ WORKDIR /root/catkin_ws/src
 RUN git clone https://github.com/ethz-asl/voxgraph.git
 
 RUN wstool merge ./voxgraph/voxgraph_https.rosinstall
+RUN wstool merge ./voxgraph/arche_https.rosinstall
 RUN wstool update
 
-WORKDIR /root/catkin_ws/src
-RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin build voxgraph'
+RUN apt-get update && apt-get install -y --no-install-recommends ros-melodic-tf2-geometry-msgs
 
+RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin build voxgraph lidar_undistortion'
 
 RUN sed -i "6i source \"/root/catkin_ws/devel/setup.bash\"" /ros_entrypoint.sh
 
