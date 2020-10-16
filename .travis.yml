@@ -9,8 +9,8 @@ matrix:
   include:
     - name: "hdl_graph_slam"
       env: PACKAGE=hdl_graph_slam
-    - name: "lego"
-      env: PACKAGE=lego
+    - name: "lego_loam"
+      env: PACKAGE=lego_loam
     - name: "loam"
       env: PACKAGE=loam
     - name: "suma"
