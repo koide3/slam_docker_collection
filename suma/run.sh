@@ -7,7 +7,6 @@ sudo docker run -it --rm \
 			-v /tmp/.X11-unix:/tmp/.X11-unix \
 			-v $(realpath SuMa/config):/root/catkin_ws/src/SuMa/config \
 			-w /root/catkin_ws/src/SuMa/bin \
-			--name glxgears \
 			$@ \
 			suma
 

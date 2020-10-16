@@ -1,14 +1,10 @@
 FROM ros:melodic
 
-RUN apt-get update && apt-get install -y --no-install-recommends && apt-get install -y --no-install-recommends wget nano build-essential ros-melodic-pcl-ros
-RUN apt-get install -y --no-install-recommends libomp-dev
-
-RUN apt-get install -y --no-install-recommends python3-pip
-RUN pip3 install -U pip setuptools
-RUN pip3 install numpy optuna evo pyquaternion
-RUN pip3 install pyquaternion
-
-RUN apt-get install -y --no-install-recommends unzip
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+ && apt-get install -y --no-install-recommends wget nano libomp-dev build-essential python3-pip \
+                                               ros-melodic-pcl-ros \
+ && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /root/catkin_ws/src
 WORKDIR /root/catkin_ws/src
@@ -24,9 +20,6 @@ WORKDIR /root/catkin_ws
 RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin_make -DCMAKE_BUILD_TYPE=Release'
 
 RUN sed -i "6i source \"/root/catkin_ws/devel/setup.bash\"" /ros_entrypoint.sh
-
-
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /
 
