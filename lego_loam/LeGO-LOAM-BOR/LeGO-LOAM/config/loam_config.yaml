@@ -21,7 +21,7 @@ lego_loam:
         nearest_feature_search_distance: 5
 
     mapping:
-        enable_loop_closure: false
+        enable_loop_closure: true
         mapping_frequency_divider: 5
 
         surrounding_keyframe_search_radius: 50.0   # key frame that is within n meters from current pose will be
