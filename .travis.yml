@@ -15,6 +15,8 @@ matrix:
       env: PACKAGE=loam
     - name: "suma"
       env: PACKAGE=suma
+    - name: "ethzasl_icp"
+      env: PACKAGE=ethzasl_icp
 
 script:
   - cd $PACKAGE
