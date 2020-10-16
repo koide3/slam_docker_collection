@@ -25,7 +25,7 @@ RUN sed -i '10c #include "lz4hc.h"' /usr/include/flann/util/serialization.h
 COPY LINS---LiDAR-inertial-SLAM /root/catkin_ws/src/LINS---LiDAR-inertial-SLAM/
 
 WORKDIR /root/catkin_ws
-RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin_make -DCMAKE_BUILD_TYPE=Release'
+RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin_make -j1 -DCMAKE_BUILD_TYPE=Release'
 
 RUN sed -i "6i source \"/root/catkin_ws/devel/setup.bash\"" /ros_entrypoint.sh
 
