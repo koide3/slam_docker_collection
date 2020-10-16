@@ -19,6 +19,12 @@ matrix:
       env: PACKAGE=ethzasl_icp
     - name: "voxblox"
       env: PACKAGE=voxblox
+    - name: "lins"
+      env: PACKAGE=lins
+    - name: "lio_sam"
+      env: PACKAGE=lio_sam
+    - name: "lio_mapping"
+      env: PACKAGE=lio_mapping
 
 script:
   - cd $PACKAGE
