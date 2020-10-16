@@ -3,9 +3,9 @@ FROM ros:melodic
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
  && apt-get install -y --no-install-recommends wget nano build-essential libgoogle-glog-dev automake libtool m4 automake \
-                                               python-wstool python-catkin-tools protobuf-compiler autoconf \
+                                               python-wstool python-catkin-tools protobuf-compiler autoconf libomp-dev \
                                                libmetis-dev mesa-utils x11-apps \
-                                               ros-melodic-cmake-modules ros-melodic-eigen-conversions ros-melodic-tf-conversions ros-melodic-rviz ros-melodic-cv-bridge \
+                                               ros-melodic-pcl-ros ros-melodic-cmake-modules ros-melodic-eigen-conversions ros-melodic-tf-conversions ros-melodic-rviz ros-melodic-cv-bridge \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root
