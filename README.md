@@ -9,13 +9,13 @@ This is my personal attempt to create reusable and portable environments for 3D 
 Build docker image:
 ```bash
 cd slam_docker_collection/hdl_graph_slam
-./build
+./build.sh
 ```
 
 Run docker image:
 ```bash
 cd slam_docker_collection/hdl_graph_slam
-./run -v ~/datasets:/datasets
+./run.sh -v ~/datasets:/datasets  # you can put more docker run arguments
 
 # in docker
 source /ros_entrypoint.sh
