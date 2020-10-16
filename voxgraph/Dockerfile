@@ -5,7 +5,8 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends wget nano build-essential libgoogle-glog-dev automake libtool m4 automake \
                                                python-wstool python-catkin-tools protobuf-compiler autoconf libomp-dev \
                                                libmetis-dev mesa-utils x11-apps \
-                                               ros-melodic-pcl-ros ros-melodic-cmake-modules ros-melodic-eigen-conversions ros-melodic-tf-conversions ros-melodic-rviz ros-melodic-cv-bridge \
+                                               ros-melodic-pcl-ros ros-melodic-cmake-modules ros-melodic-eigen-conversions \
+                                               ros-melodic-tf2-geometry-msgs ros-melodic-tf-conversions ros-melodic-rviz ros-melodic-cv-bridge \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root
@@ -35,8 +36,6 @@ RUN git clone https://github.com/ethz-asl/voxgraph.git
 RUN wstool merge ./voxgraph/voxgraph_https.rosinstall
 RUN wstool merge ./voxgraph/arche_https.rosinstall
 RUN wstool update
-
-RUN apt-get update && apt-get install -y --no-install-recommends ros-melodic-tf2-geometry-msgs
 
 RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin build voxgraph lidar_undistortion'
 
