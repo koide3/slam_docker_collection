@@ -16,7 +16,7 @@ RUN wget -O gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0-alpha2.zip
 RUN unzip gtsam.zip
 RUN mkdir /root/gtsam-4.0.0-alpha2/build
 WORKDIR /root/gtsam-4.0.0-alpha2/build
-RUN cmake .. && make -j4 2> /dev/null
+RUN cmake .. && make -j$(nproc) 2> /dev/null
 RUN make install
 
 RUN mkdir -p /root/catkin_ws/src

@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build --tag voxgraph -f Dockerfile .
+sudo docker build --tag voxblox -f Dockerfile .
