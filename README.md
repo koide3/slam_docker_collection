@@ -27,10 +27,10 @@ roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 ```
 
 ## Dockernized packages
-- [![Build Status](https://travis-ci.org/koide3/ethzasl_icp_mapping.svg?branch=reintegrate%2Fmaster_into_indigo_devel)](https://travis-ci.org/koide3/ethzasl_icp_mapping) [ethzasl_icp_mapping](https://github.com/ethz-asl/ethzasl_icp_mapping) [usage](https://github.com/koide3/ethzasl_icp_mapping/blob/reintegrate/master_into_indigo_devel/docker/howtouse.md)
-- [![Build Status](https://travis-ci.org/koide3/hdl_graph_slam.svg?branch=master)](https://travis-ci.org/koide3/hdl_graph_slam) [hdl_graph_slam](https://github.com/koide3/hdl_graph_slam) [usage](https://github.com/koide3/hdl_graph_slam/blob/master/docker/howtouse.md)
+- [![Build Status](https://travis-ci.org/koide3/ethzasl_icp_mapping.svg?branch=reintegrate%2Fmaster_into_indigo_devel)](https://travis-ci.org/koide3/ethzasl_icp_mapping) [ethzasl_icp_mapping](https://github.com/ethz-asl/ethzasl_icp_mapping) [[usage]](https://github.com/koide3/ethzasl_icp_mapping/blob/reintegrate/master_into_indigo_devel/docker/howtouse.md)
+- [![Build Status](https://travis-ci.org/koide3/hdl_graph_slam.svg?branch=master)](https://travis-ci.org/koide3/hdl_graph_slam) [hdl_graph_slam](https://github.com/koide3/hdl_graph_slam) [[usage]](https://github.com/koide3/hdl_graph_slam/blob/master/docker/howtouse.md)
 - [LOAM](https://github.com/laboshinl/loam_velodyne)
-- [![Build Status](https://travis-ci.org/koide3/LeGO-LOAM-BOR.svg?branch=master)](https://travis-ci.org/koide3/LeGO-LOAM-BOR) [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) [usage](https://github.com/koide3/LeGO-LOAM-BOR/blob/master/docker/howtouse.md)
+- [![Build Status](https://travis-ci.org/koide3/LeGO-LOAM-BOR.svg?branch=master)](https://travis-ci.org/koide3/LeGO-LOAM-BOR) [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) [[usage]](https://github.com/koide3/LeGO-LOAM-BOR/blob/master/docker/howtouse.md)
 - [SuMa](https://github.com/jbehley/SuMa)
 - [Voxblox](https://github.com/ethz-asl/voxblox)
 - [Voxgraph](https://github.com/ethz-asl/voxgraph)
