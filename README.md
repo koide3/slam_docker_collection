@@ -45,7 +45,7 @@ roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 
 | LOAM | hdl_graph_slam | SuMa |
 | ---- | -------------- | ---- |
-| <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347880-5da2df80-205b-11eb-8aae-abfd8fc67f70.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347836-4fed5a00-205b-11eb-931c-158f6cd056bf.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347870-5bd91c00-205b-11eb-82f0-8dec94dc3aec.gif"/> |
+| <img height="320pix" width="auto" src="https://user-images.githubusercontent.com/31344317/98347880-5da2df80-205b-11eb-8aae-abfd8fc67f70.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347836-4fed5a00-205b-11eb-931c-158f6cd056bf.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347870-5bd91c00-205b-11eb-82f0-8dec94dc3aec.gif"/> |
 
 | LINS | SuMa | voxgraph |
 | ---- | ---- | -------- |
