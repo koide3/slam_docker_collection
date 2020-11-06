@@ -22,3 +22,9 @@
 [submodule "lio_sam"]
 	path = lio_sam
 	url = https://github.com/koide3/LIO-SAM.git
+[submodule "voxblox"]
+	path = voxblox
+	url = https://github.com/koide3/voxblox.git
+[submodule "voxgraph"]
+	path = voxgraph
+	url = https://github.com/koide3/voxgraph
