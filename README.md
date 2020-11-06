@@ -29,8 +29,8 @@ roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 ```
 
 ## Dockernized packages
-- [ethzasl_icp_mapping](https://github.com/ethz-asl/ethzasl_icp_mapping)
-- [hdl_graph_slam](https://github.com/koide3/hdl_graph_slam)
+- [![Build Status](https://travis-ci.org/koide3/ethzasl_icp_mapping_docker.svg?branch=reintegrate%2Fmaster_into_indigo_devel)](https://travis-ci.org/koide3/ethzasl_icp_mapping_docker) [ethzasl_icp_mapping](https://github.com/ethz-asl/ethzasl_icp_mapping) 
+- [![Build Status](https://travis-ci.org/koide3/hdl_graph_slam.svg?branch=master)](https://travis-ci.org/koide3/hdl_graph_slam) [hdl_graph_slam](https://github.com/koide3/hdl_graph_slam)
 - [LOAM](https://github.com/laboshinl/loam_velodyne)
 - [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
 - [SuMa](https://github.com/jbehley/SuMa)
