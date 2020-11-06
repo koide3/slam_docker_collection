@@ -6,19 +6,25 @@ This is my personal attempt to create reusable and portable environments for 3D 
 
 ## Basic Usage
 
+Update submodule:
+```bash
+cd slam_docker_collection
+git submodule init
+git submodule update hdl_graph_slam
+```
+
 Build docker image:
 ```bash
-cd slam_docker_collection/hdl_graph_slam
+cd slam_docker_collection/hdl_graph_slam/docker
 ./build.sh
 ```
 
 Run docker image:
 ```bash
-cd slam_docker_collection/hdl_graph_slam
-./run.sh -v ~/datasets:/datasets  # you can put more docker run arguments
+cd slam_docker_collection/hdl_graph_slam/docker
+./run.sh -v ~/datasets:/datasets  # you can put more docker run arguments here
 
 # in docker
-source /ros_entrypoint.sh
 roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 ```
 
