@@ -19,3 +19,6 @@
 [submodule "lio_mapping"]
 	path = lio_mapping
 	url = https://github.com/koide3/lio-mapping
+[submodule "lio_sam"]
+	path = lio_sam
+	url = https://github.com/TixiaoShan/LIO-SAM.git
