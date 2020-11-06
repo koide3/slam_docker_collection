@@ -1,6 +1,6 @@
 # slam_docker_collection
 
-This is my personal attempt to create reusable and portable environments for 3D SLAM with docker.
+This is my personal attempt to create reusable and portable environments for 3D SLAM with docker. I think SLAM packages are always difficult to build from scratch in particular when we use different versions of ROS/Ubuntu/some libraries. 
 
 ## Basic Usage
 
