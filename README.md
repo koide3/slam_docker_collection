@@ -1,7 +1,5 @@
 # slam_docker_collection
 
-[![Build Status](https://travis-ci.org/koide3/slam_docker_collection.svg?branch=master)](https://travis-ci.org/koide3/slam_docker_collection)
-
 This is my personal attempt to create reusable and portable environments for 3D SLAM with docker.
 
 ## Basic Usage
