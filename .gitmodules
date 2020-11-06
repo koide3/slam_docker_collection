@@ -13,3 +13,6 @@
 [submodule "suma"]
 	path = suma
 	url = https://github.com/koide3/SuMa.git
+[submodule "lins"]
+	path = lins
+	url = https://github.com/koide3/LINS---LiDAR-inertial-SLAM
