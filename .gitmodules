@@ -7,3 +7,6 @@
 [submodule "lego_loam"]
 	path = lego_loam
 	url = https://github.com/koide3/LeGO-LOAM-BOR
+[submodule "loam"]
+	path = loam
+	url = https://github.com/koide3/loam_velodyne.git
