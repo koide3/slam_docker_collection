@@ -1,0 +1,30 @@
+[submodule "ethzasl_icp"]
+	path = ethzasl_icp
+	url = https://github.com/koide3/ethzasl_icp_mapping_docker
+[submodule "hdl_graph_slam"]
+	path = hdl_graph_slam
+	url = https://github.com/koide3/hdl_graph_slam
+[submodule "lego_loam"]
+	path = lego_loam
+	url = https://github.com/koide3/LeGO-LOAM-BOR
+[submodule "loam"]
+	path = loam
+	url = https://github.com/koide3/loam_velodyne.git
+[submodule "suma"]
+	path = suma
+	url = https://github.com/koide3/SuMa.git
+[submodule "lins"]
+	path = lins
+	url = https://github.com/koide3/LINS---LiDAR-inertial-SLAM
+[submodule "lio_mapping"]
+	path = lio_mapping
+	url = https://github.com/koide3/lio-mapping
+[submodule "lio_sam"]
+	path = lio_sam
+	url = https://github.com/koide3/LIO-SAM.git
+[submodule "voxblox"]
+	path = voxblox
+	url = https://github.com/koide3/voxblox.git
+[submodule "voxgraph"]
+	path = voxgraph
+	url = https://github.com/koide3/voxgraph
