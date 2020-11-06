@@ -31,7 +31,7 @@ roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 - [![Build Status](https://travis-ci.org/koide3/hdl_graph_slam.svg?branch=master)](https://travis-ci.org/koide3/hdl_graph_slam) [hdl_graph_slam](https://github.com/koide3/hdl_graph_slam) [[usage]](https://github.com/koide3/hdl_graph_slam/blob/master/docker/howtouse.md)
 - [![Build Status](https://travis-ci.org/koide3/loam_velodyne.svg?branch=master)](https://travis-ci.org/koide3/loam_velodyne) [LOAM](https://github.com/laboshinl/loam_velodyne) [[usage]](https://github.com/koide3/loam_velodyne/blob/master/docker/howtouse.md)
 - [![Build Status](https://travis-ci.org/koide3/LeGO-LOAM-BOR.svg?branch=master)](https://travis-ci.org/koide3/LeGO-LOAM-BOR) [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) [[usage]](https://github.com/koide3/LeGO-LOAM-BOR/blob/master/docker/howtouse.md)
-- [SuMa](https://github.com/jbehley/SuMa)
+- [![Build Status](https://travis-ci.org/koide3/SuMa.svg?branch=master)](https://travis-ci.org/koide3/SuMa) [SuMa](https://github.com/jbehley/SuMa) [[usage]](https://github.com/koide3/SuMa/blob/master/docker/howtouse.md)
 - [Voxblox](https://github.com/ethz-asl/voxblox)
 - [Voxgraph](https://github.com/ethz-asl/voxgraph)
 - [LINS](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM)

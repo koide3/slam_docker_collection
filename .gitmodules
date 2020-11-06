@@ -10,3 +10,6 @@
 [submodule "loam"]
 	path = loam
 	url = https://github.com/koide3/loam_velodyne.git
+[submodule "suma"]
+	path = suma
+	url = https://github.com/koide3/SuMa.git
