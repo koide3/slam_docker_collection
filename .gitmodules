@@ -1,3 +1,6 @@
 [submodule "hdl_graph_slam/hdl_graph_slam"]
 	path = hdl_graph_slam/hdl_graph_slam
 	url = https://github.com/koide3/hdl_graph_slam
+[submodule "ethzasl_icp"]
+	path = ethzasl_icp
+	url = https://github.com/koide3/ethzasl_icp_mapping_docker
