@@ -4,20 +4,20 @@ This is my personal attempt to create reusable and portable environments for 3D 
 
 ## Basic Usage
 
-Update submodule:
+### 1. Update submodule:
 ```bash
 cd slam_docker_collection
 git submodule init
 git submodule update hdl_graph_slam
 ```
 
-Build docker image:
+### 2. Build docker image:
 ```bash
 cd slam_docker_collection/hdl_graph_slam/docker
 ./build.sh
 ```
 
-Run docker image:
+### 3. Run docker image:
 ```bash
 cd slam_docker_collection/hdl_graph_slam/docker
 ./run.sh -v ~/datasets:/datasets  # you can put more docker run arguments here
