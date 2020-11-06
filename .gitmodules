@@ -16,6 +16,3 @@
 [submodule "lins"]
 	path = lins
 	url = https://github.com/koide3/LINS---LiDAR-inertial-SLAM
-[submodule "lio_mapping"]
-	path = lio_mapping
-	url = https://github.com/koide3/lio-mapping
