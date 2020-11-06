@@ -4,3 +4,6 @@
 [submodule "hdl_graph_slam"]
 	path = hdl_graph_slam
 	url = https://github.com/koide3/hdl_graph_slam
+[submodule "lego_loam"]
+	path = lego_loam
+	url = https://github.com/koide3/LeGO-LOAM-BOR
