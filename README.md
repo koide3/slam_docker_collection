@@ -41,12 +41,10 @@ roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 | [![Build Status](https://travis-ci.org/koide3/voxgraph.svg?branch=master)](https://travis-ci.org/koide3/voxgraph) | [Voxgraph](https://github.com/ethz-asl/voxgraph) | [[usage]](https://github.com/koide3/voxgraph/blob/master/docker/howtouse.md) |
 
 
-## Image Gallery
-
 | LOAM | hdl_graph_slam | SuMa |
 | ---- | -------------- | ---- |
-| <img height="320pix" width="auto" src="https://user-images.githubusercontent.com/31344317/98347880-5da2df80-205b-11eb-8aae-abfd8fc67f70.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347836-4fed5a00-205b-11eb-931c-158f6cd056bf.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347870-5bd91c00-205b-11eb-82f0-8dec94dc3aec.gif"/> |
+| <img style="max-height: 320pix; width: auto;" src="https://user-images.githubusercontent.com/31344317/98347880-5da2df80-205b-11eb-8aae-abfd8fc67f70.gif"/> | <img style="max-height: 320pix; width: auto;" src="https://user-images.githubusercontent.com/31344317/98347836-4fed5a00-205b-11eb-931c-158f6cd056bf.gif"/> | <img style="max-height: 320pix; width: auto;" src="https://user-images.githubusercontent.com/31344317/98347870-5bd91c00-205b-11eb-82f0-8dec94dc3aec.gif"/> |
 
 | LINS | SuMa | voxgraph |
 | ---- | ---- | -------- |
-| <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347847-54197780-205b-11eb-988b-ac497d3ec8f8.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347890-60053980-205b-11eb-97fa-de73c2f9448f.gif"/> | <img height="320pix" src="https://user-images.githubusercontent.com/31344317/98347899-64315700-205b-11eb-92d5-1f2df959af6f.gif"/> |
+| <img style="max-height: 320pix; width: auto;" src="https://user-images.githubusercontent.com/31344317/98347847-54197780-205b-11eb-988b-ac497d3ec8f8.gif"/> | <img  style="max-height: 320pix; width: auto;" src="https://user-images.githubusercontent.com/31344317/98347890-60053980-205b-11eb-97fa-de73c2f9448f.gif"/> | <img style="max-height: 320pix; width: auto;" src="https://user-images.githubusercontent.com/31344317/98347899-64315700-205b-11eb-92d5-1f2df959af6f.gif"/> |
