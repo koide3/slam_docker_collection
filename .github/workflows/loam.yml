@@ -34,5 +34,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: ${{github.workspace}}/${{env.PACKAGE_NAME}}/docker/Dockerfile
-          context: ${{github.workspace}}/${{env.PACKAGE_NAME}}/docker
+          context: ${{github.workspace}}/${{env.PACKAGE_NAME}}
           push: false
