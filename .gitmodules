@@ -28,3 +28,6 @@
 [submodule "voxgraph"]
 	path = voxgraph
 	url = https://github.com/koide3/voxgraph
+[submodule "fast_lio"]
+	path = fast_lio
+	url = git@github.com:koide3/FAST_LIO.git

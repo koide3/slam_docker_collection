@@ -37,6 +37,8 @@ roslaunch hdl_graph_slam hdl_graph_slam_400.launch
 | [![Build Status](https://travis-ci.org/koide3/LINS---LiDAR-inertial-SLAM.svg?branch=master)](https://travis-ci.org/koide3/LINS---LiDAR-inertial-SLAM) | [LINS](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM) | [[usage]](https://github.com/koide3/LINS---LiDAR-inertial-SLAM/blob/master/docker/howtouse.md) |
 | [![Build Status](https://travis-ci.org/koide3/lio-mapping.svg?branch=master)](https://travis-ci.org/koide3/lio-mapping) | [LIO-mapping](https://github.com/hyye/lio-mapping) | [[usage]](https://github.com/koide3/lio-mapping/blob/master/docker/howtouse.md) |
 | [![Build Status](https://travis-ci.org/koide3/LIO-SAM.svg?branch=master)](https://travis-ci.org/koide3/LIO-SAM) | [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) | [[usage]](https://github.com/koide3/LIO-SAM/blob/master/docker/howtouse.md) |
+|  | [FAST-LIO](https://github.com/hku-mars/FAST_LIO) | [[usage]](https://github.com/koide3/FAST_LIO/blob/master/docker/howtouse.md) |
+|  | [direct_lidar_odometry](https://github.com/vectr-ucla/direct_lidar_odometry) | [[usage]](https://github.com/koide3/direct_lidar_odometry/blob/master/docker/howtouse.md) |
 | [![Build Status](https://travis-ci.org/koide3/voxblox.svg?branch=master)](https://travis-ci.org/koide3/voxblox) | [Voxblox](https://github.com/ethz-asl/voxblox) | [[usage]](https://github.com/koide3/voxblox/blob/master/docker/howtouse.md) |
 | [![Build Status](https://travis-ci.org/koide3/voxgraph.svg?branch=master)](https://travis-ci.org/koide3/voxgraph) | [Voxgraph](https://github.com/ethz-asl/voxgraph) | [[usage]](https://github.com/koide3/voxgraph/blob/master/docker/howtouse.md) |
 
