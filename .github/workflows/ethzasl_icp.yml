@@ -33,6 +33,6 @@ jobs:
       - name: Docker build
         uses: docker/build-push-action@v2
         with:
-          file: ${{github.workspace}}/$ethzasl_icp/docker/Dockerfile
-          context: ${{github.workspace}}/$ethzasl_icp/docker
+          file: ${{github.workspace}}/$PACKAGE_NAME/docker/Dockerfile
+          context: ${{github.workspace}}/$PACKAGE_NAME/docker
           push: false
