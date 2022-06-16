@@ -1,5 +1,3 @@
-name: Build
-
 on:
   push:
     branches: [ master ]
@@ -14,8 +12,10 @@ on:
 env:
   PACKAGE_NAME: ethzasl_icp
 
+name: ${{env.PACKAGE_NAME}}
+
 jobs:
-  ${{env.PACKAGE_NAME}}:
+  build:
     runs-on: ubuntu-latest
 
     steps:

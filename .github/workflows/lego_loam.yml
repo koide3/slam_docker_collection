@@ -15,7 +15,7 @@ env:
   PACKAGE_NAME: lego_loam
 
 jobs:
-  ${{env.PACKAGE_NAME}}:
+  build:
     runs-on: ubuntu-latest
 
     steps:
