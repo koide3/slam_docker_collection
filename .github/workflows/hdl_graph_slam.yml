@@ -15,7 +15,7 @@ env:
   PACKAGE_NAME: hdl_graph_slam
 
 jobs:
-  build:
+  ${{env.PACKAGE_NAME}}:
     runs-on: ubuntu-latest
 
     steps:

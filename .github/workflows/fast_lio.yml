@@ -15,7 +15,7 @@ env:
   PACKAGE_NAME: fast_lio
 
 jobs:
-  build:
+  ${{env.PACKAGE_NAME}}:
     runs-on: ubuntu-latest
 
     steps:

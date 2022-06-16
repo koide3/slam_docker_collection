@@ -15,7 +15,7 @@ env:
   PACKAGE_NAME: lio_sam
 
 jobs:
-  build:
+  ${{env.PACKAGE_NAME}}:
     runs-on: ubuntu-latest
 
     steps:
