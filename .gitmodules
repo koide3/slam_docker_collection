@@ -34,3 +34,6 @@
 [submodule "direct_lidar_odometry"]
 	path = direct_lidar_odometry
 	url = https://github.com/koide3/direct_lidar_odometry
+[submodule "clins"]
+	path = clins
+	url = https://github.com/koide3/clins
