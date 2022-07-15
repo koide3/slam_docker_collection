@@ -37,3 +37,6 @@
 [submodule "clins"]
 	path = clins
 	url = https://github.com/koide3/clins
+[submodule "dliom"]
+	path = dliom
+	url = https://github.com/koide3/D-LIOM
