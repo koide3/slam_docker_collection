@@ -40,3 +40,9 @@
 [submodule "dliom"]
 	path = dliom
 	url = https://github.com/koide3/D-LIOM
+[submodule "balm"]
+	path = balm
+	url = https://github.com/koide3/BALM
+[submodule "voxelmap"]
+	path = voxelmap
+	url = https://github.com/koide3/VoxelMap
