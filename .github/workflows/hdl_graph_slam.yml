@@ -35,4 +35,5 @@ jobs:
         with:
           file: ${{github.workspace}}/${{env.PACKAGE_NAME}}/docker/noetic/Dockerfile
           context: ${{github.workspace}}/${{env.PACKAGE_NAME}}
-          push: false
+          tags: ${{secrets.DOCKER_USERNAME}}/slam_docker_collection:${{env.PACKAGE_NAME}}
+          push: true
