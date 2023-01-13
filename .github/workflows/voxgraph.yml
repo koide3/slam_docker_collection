@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  PACKAGE_NAME: ethzasl_icp
+  PACKAGE_NAME: voxgraph
 
 jobs:
   build:
