@@ -46,3 +46,6 @@
 [submodule "voxelmap"]
 	path = voxelmap
 	url = https://github.com/koide3/VoxelMap
+[submodule "fast_livo"]
+	path = fast_livo
+	url = https://github.com/koide3/FAST-LIVO
